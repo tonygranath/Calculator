@@ -14,7 +14,7 @@ public class Calculator {
 
     //Get numbers from a string
     private static LinkedList<Integer> splitNumbers(String operation) {
-        String[] split = operation.split("\\+|-|\\*|/"); //split string at operators
+        String[] split = operation.split("[+\\-*/]"); //split string at operators
         LinkedList<Integer> list = new LinkedList<>();
 
         for(String str : split) {
