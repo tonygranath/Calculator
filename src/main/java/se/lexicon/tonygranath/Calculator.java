@@ -144,8 +144,8 @@ public class Calculator {
             case "quit":
                 return false;
             default:
-                LinkedList<Integer> numbers; // = new LinkedList<>();
-                LinkedList<String> operators; // = new LinkedList<>();
+                LinkedList<Integer> numbers;
+                LinkedList<String> operators;
                 numbers = splitNumbers(operation);
                 operators = splitOperators(operation);
                 System.out.println(operation + " = " + calc(numbers, operators));
